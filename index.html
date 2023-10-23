@@ -1,26 +1,72 @@
 <!DOCTYPE html>
+
 <html>
 	<head lang="en">
 		<meta charset="utf-8">
 		<title>It's just a hill</title>
 		 
-		<script type="module" crossorigin src="/assets/index-0cb0a306.js"></script>
-		<link rel="stylesheet" href="/assets/index-ecf12476.css">
+		<script type="module" crossorigin src="/assets/index-4bca2da3.js"></script>
+		<link rel="stylesheet" href="/assets/index-acad126b.css">
 	</head>
 	<body>
+
+
+
 		<div id="container" style="background-color: blue;">
 
 
 			<div id="statusText">SCAN</div>
+
+
+			<div class="menu-btn" onclick="toggleMenu()">☰</div>
+			<div class="side-nav">
+				<a href="#" class="close-btn" onclick="toggleMenu()">×</a>
+				<a href="#" id="road1" onclick="toggleMenu()">Col d'Iszpegui </a>
+				<a href="#" id="road2" onclick="toggleMenu()">Mont Ventoux </a>
+				<a href="#" id="road3" onclick="toggleMenu()">Alpe d'Huez </a>
+				<a href="#" id="road4" onclick="toggleMenu()">Passo dello Stelvio </a>
+				<a href="#" id="road5" onclick="toggleMenu()">Col du Tourmalet </a>
+				<a href="#" id="road6" onclick="toggleMenu()">Col du Galibier </a>
+				<a href="#" id="road7" onclick="toggleMenu()">Sa Calobra </a>
+				<a href="#" id="road8" onclick="toggleMenu()">Mount Evans </a>
+				<a href="#" id="road9" onclick="toggleMenu()">Puy de Dome </a>
+				<a href="#" id="road10" onclick="toggleMenu()">Col de la Madeleine  </a>
+				<!-- Add more menu items as needed -->
+			</div>
+			
 		
 			
 			
 
 			
-
-
-
-
 		</div>
+
+
 	</body>
+
+
 </html>
+<script>
+    let isMenuOpen = false;
+
+    function toggleMenu() {
+        const sideNav = document.querySelector('.side-nav');
+        const canvasContainer = document.querySelector('#canvas-container');
+
+        if (isMenuOpen) {
+            sideNav.style.marginLeft = '-250px';
+           // canvasContainer.style.marginLeft = '0';
+        } else {
+            sideNav.style.marginLeft = '0';
+           // canvasContainer.style.marginLeft = '250px';
+        }
+
+        isMenuOpen = !isMenuOpen;
+    }
+
+
+
+
+
+
+	</script>
